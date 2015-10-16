@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .header-padding {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    </style>
+
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter2">
+<ion-pane>
+    <ion-header-bar>
+        <div class="bar bar-header bar-positive">
+            <div class="button-bar header-padding">
+                <a class="button button-small button-outline button-calm activated">Новости</a>
+                <a class="button button-small button-outline button-calm ">Анонсы</a>
+                <a class="button button-small button-outline button-calm ">Конференции</a>
+            </div>
+        </div>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img src="http://cs624224.vk.me/v624224236/4fe1a/EI9OmHNhV18.jpg">
+                <h2>Marty McFly</h2>
+                <p>November 05, 1955</p>
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" src="http://cs624224.vk.me/v624224236/4fe1a/EI9OmHNhV18.jpg">
+                <p>
+                    This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                    the content is from a card-body consisting of an image and paragraph text. The footer
+                    consists of tabs, icons aligned left, within the card-footer.
+                </p>
+
+            </div>
+
+        </div>
+    </ion-content>
+
+    <ion-footer-bar>
+        <div class="tabs bar tabs-icon-top tabs-positive tabs-color-calm">
+            <a class="tab-item active" href="#">
+                <i class="icon ion-university"></i>
+                Материалы
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-clipboard"></i>
+                Расписание
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-help-circled"></i>
+                Больше
+            </a>
+        </div>
+    </ion-footer-bar>
+</ion-pane>
+</body>
+</html>
